@@ -21,5 +21,5 @@ export default function () {
     check(response, { 'status was 201': (r) => r.status === 201 });
 
     // Simulate think time
-    //sleep(0.5);
+    sleep(0.2);
 }
