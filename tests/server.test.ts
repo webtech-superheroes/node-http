@@ -7,7 +7,7 @@ describe("test add function", () => {
         expect(server).toBeInstanceOf(http.Server);
     });
 
-    it("should respond with 404 for non existing endpont",async () => {
+    it("should respond with 404 for non existing endpoint",async () => {
         const response = await supertest(server)
             .get('/not-available')
             .expect(404);
